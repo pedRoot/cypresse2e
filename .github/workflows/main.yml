@@ -1,6 +1,16 @@
 name: Run test
 
-on: [push]
+on:
+  push:
+    branches:
+      - "!**/feature-deploy-*"
+      - "**/fixture-*"
+  pull_request:
+     branches:
+       - "**/feature-deploy-*"
+       - "!**/fixture-*"
+     types:
+       - opened
 
 jobs:
   cypress-e2e-run:
