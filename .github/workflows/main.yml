@@ -1,20 +1,9 @@
 name: Run test
 
-on:
-  push:
-    branches:
-      - "!**/feature-deploy-*"
-      - "**/fixture-*"
-
-#   pull_request:
-#     branches:
-#       - "**/feature-deploy-*"
-#       - "!**/fixture-*"
-#     types:
-#       - opened
+on: [push]
 
 jobs:
-  test-run:
+  cypress-e2e-run:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -22,4 +11,5 @@ jobs:
       - name: Cypress.io
         uses: cypress-io/github-action@v2.9.7
         with:
+          build: npm run build
           start: npm run start
