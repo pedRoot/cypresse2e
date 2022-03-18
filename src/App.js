@@ -91,7 +91,7 @@ function App() {
             <div
               className="alert alert-secondary mt-2"
               role="alert"
-              data-testid="resumel"
+              data-testid="resume"
             >
               <pre>{postLogin}</pre>
             </div>

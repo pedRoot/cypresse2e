@@ -71,3 +71,11 @@ Cualquier cambio que se desee publicar en la página del sitio https://pedroot.g
 
 1. Hacer el build de la app, **npm run predeploy**
 2. Desplegar los cambios, **npm run deploy**
+
+## Integración con git hook
+
+Por medio de husky:
+
+1. npm install husky — save-dev
+2. npx husky install
+3. npx husky add .husky/pre-push "npm run cy:r"
