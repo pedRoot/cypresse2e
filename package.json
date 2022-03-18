@@ -19,7 +19,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "cy:o": "cypress open",
-    "cy:r": "cypress run",
+    "cy:r": "cypress run --quiet",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
   },
