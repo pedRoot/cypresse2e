@@ -61,7 +61,7 @@ function App() {
               className="form-control"
               ref={post_title}
               placeholder="example@email.com"
-              data-testid="email"
+              data-testid="emailTo"
             />
           </div>
           <div className="form-group">
