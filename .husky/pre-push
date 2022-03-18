@@ -1,4 +1,4 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npm run cy:r
+grep -Rvzq -e '.skip' -e '.only' cypress/test && npm run cy:r

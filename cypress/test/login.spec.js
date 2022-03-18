@@ -10,7 +10,7 @@ describe("Interceptor command, work with APIs", () => {
   });
 
   describe("Shoulds basic", () => {
-    it("Initial validataion", () => {
+    it.skip("Initial validataion", () => {
       loginPage.elements.inputEmail().should("have.length", 1);
       loginPage.elements.inputPassword().should("have.length", 1);
       loginPage.elements.buttonSend().should("have.length", 1);
